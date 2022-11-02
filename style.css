@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  max-width: 1440px;
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-Gray);
+  margin: 0.9rem;
+}
+html {
+  font-size: 16px;
+}
+main {
+  background-color: var(--Light-Gray);
+  max-width: 800px;
+  border-radius: 5px;
+  box-shadow: 1px 3px 30px 1px var(--Grayish-Blue);
+  overflow: hidden;
+}
+
+h2 {
+  color: var(--Cyan);
+}
+p {
+  color: var(--Grayish-Blue);
+}
+
+.cta {
+  background-color: var(--Bright-Yellow);
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  color: var(--Light-Gray);
+  font-weight: 700;
+  border: var(--Bright-Yellow) 1.5px solid;
+  box-shadow: 0px 20px 30px -10px rgba(60, 60, 60, 0.288);
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.cta:hover {
+  background-color: var(--Cyan);
+  color: var(--Bright-Yellow);
+}
+
+.community {
+  padding: 2rem;
+}
+
+.community h3 {
+  color: var(--Bright-Yellow);
+  margin-block: 1.5rem 1rem;
+}
+
+.community p {
+  max-width: 60ch;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.subscibtion {
+  background-color: hsl(179, 59%, 39%);
+  color: var(--Light-Gray);
+  padding: 3rem;
+}
+
+.subscibtion_price {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.subscibtion_price .amount {
+  font-size: 2rem;
+  color: var(--Light-Gray);
+  margin-right: 0.8rem;
+  font-weight: 700;
+}
+
+.subscibtion_price .duration {
+  color: var(--Cyan);
+}
+
+.subscibtion .desc {
+  color: var(--Light-Gray);
+  margin-top: 0.2rem;
+  margin-bottom: 2.5rem;
+
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.about {
+  background: var(--Cyan);
+  padding: 3rem;
+}
+.about h3 {
+  color: var(--Light-Gray);
+}
+
+.about p {
+  margin-top: 1rem;
+  color: var(--Light-Gray);
+  max-width: 20.5ch;
+  line-height: 1.5;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 596px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 451px) {
+  html {
+    font-size: 16px;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 321px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 221px) {
+  html {
+    font-size: 8px;
+  }
+}
